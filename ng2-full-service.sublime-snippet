@@ -1,0 +1,27 @@
+<!-- This snippet constructs an AngularJS 2 service exactly according to the official style guide (https://angular.io/docs/ts/latest/guide/style-guide.html). -->
+
+<!-- For best results, save an empty file first with a file name according to the AngularJS2 style guide (i.e. "its-name.component.ts") and this snippet will fill everything according to spec -->
+
+<!-- Tab stops are sprinkled throughout in an order that is most efficient for writing component files -->
+
+<snippet>
+	<content><![CDATA[
+//$TM_FILENAME
+import { Injectable } from '@angular/core';
+$2
+@Injectable()
+export class ${1:${TM_FILENAME/(^[A-z]|(?<=\x2D)[A-z])|(\x2E.*|\x2D)/(?1\u$1)(?2:)/g}}Service { 
+	$3
+	constructor() {
+		$4
+	}
+	$0
+}
+
+]]></content>
+
+	<tabTrigger>ngService</tabTrigger>
+	<scope>source.ts</scope>
+
+</snippet>
+

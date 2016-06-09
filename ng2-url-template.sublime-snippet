@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+templateUrl: '${0:/${TM_FILENAME/^([A-Z][a-z]*)|([A-Z][a-z]*)|(\x2E.*)/(?1\l$1:)(?2-\l$2)(?3:)/g}.component.html}'
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>templateUrl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>

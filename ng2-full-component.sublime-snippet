@@ -1,0 +1,31 @@
+<!-- This snippet constructs an AngularJS 2 component exactly according to the official style guide (https://angular.io/docs/ts/latest/guide/style-guide.html). -->
+
+<!-- For best results, save an empty file first with a file name according to the AngularJS2 style guide (i.e. "its-name.component.ts") and this snippet will fill everything according to spec -->
+
+<!-- Tab stops are sprinkled throughout in an order that is most efficient for writing component files -->
+
+<snippet>
+	<content><![CDATA[
+//$TM_FILENAME
+import { Component } from '@angular/core';
+$7
+@Component({
+	selector: '${2:${3:app}-${1/^([A-Z][a-z]*)|([A-Z][a-z]*)/(?1\l$1:)(?2-\l$2)/g}}',
+	${4:templateUrl: '${1/^([A-Z][a-z]*)|([A-Z][a-z]*)/(?1\l$1:)(?2-\l$2)/g}.component.html'},
+	${5:styleUrls: ['${1/^([A-Z][a-z]*)|([A-Z][a-z]*)/(?1\l$1:)(?2-\l$2)/g}.component.css']}$8
+})
+export class ${1:${TM_FILENAME/(^[A-z]|(?<=\x2D)[A-z])|(\x2E.*|\x2D)/(?1\u$1)(?2:)/g}}Component { 
+	$9
+	constructor() {
+		$10
+	}
+	$0
+}
+
+]]></content>
+
+	<tabTrigger>ngComponent</tabTrigger>
+	<scope>source.ts</scope>
+
+</snippet>
+
